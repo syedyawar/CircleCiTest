@@ -1,6 +1,7 @@
 version: 2
 
     jobs:
+     build:
         # The test job
         test:
             working_directory: ~/project-name
