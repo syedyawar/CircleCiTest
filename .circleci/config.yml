@@ -23,12 +23,12 @@ jobs:
       - run: mkdir test-results
       - run:
           command: sudo npm install -g karma-cli bower
-      - run:
-          command: karma start ./karma.conf.js
-          environment:
-            JUNIT_REPORT_PATH: ./junit/
-            JUNIT_REPORT_NAME: test-results.xml
-          when: always
+      # - run:
+      #     command: karma start ./karma.conf.js
+      #     environment:
+      #       JUNIT_REPORT_PATH: ./junit/
+      #       JUNIT_REPORT_NAME: test-results.xml
+      #     when: always
       - store_test_results:
           path: test-results
       - store_artifacts:
