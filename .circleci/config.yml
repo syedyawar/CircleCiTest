@@ -34,7 +34,7 @@ jobs:
           name: Testing
           command: npm run test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
       - store_test_results:
-          path: test-results
+          path: test-results.txt
       # End to End test
       # - run:
       #     name: End to End Test
