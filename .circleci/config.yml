@@ -34,7 +34,7 @@ jobs:
             JUNIT_REPORT_NAME: test-results.xml
           when: always
       - store_test_results:
-          path: ./junit
+          path: test-results
       - store_artifacts:
           path: ./junit
       # Cache local dependencies if they don't exist
