@@ -1,7 +1,7 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/project-name
+    working_directory: ~/circleCiProject
     docker:
       - image: circleci/node:10-browsers
     steps:
@@ -34,7 +34,7 @@ jobs:
           name: Testing
           command: npm run test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
       - store_test_results:
-          path: test-results.xml
+          path: test-results
       # End to End test
       # - run:
       #     name: End to End Test
