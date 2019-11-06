@@ -17,7 +17,7 @@ jobs:
             - ./node_modules
       - run:
           name: Install angularcli
-          command: sudo npm install -g @angular/cli@latest
+          command: npm install -g @angular/cli@latest
       - run:
           name: Run unit tests with karma
           command: ng test
