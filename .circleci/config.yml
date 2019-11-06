@@ -22,7 +22,7 @@ jobs:
           command: npm install
       - run: mkdir test-results
       - run:
-          command: npm install -g karma-cli bower
+          command: sudo npm install -g karma-cli bower
       - run:
           command: karma start ./karma.conf.js
           environment:
