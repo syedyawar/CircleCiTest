@@ -49,5 +49,5 @@ jobs:
       #     command: npm run e2e -- --protractor-config=e2e/protractor-ci.conf.js
       - store_test_results:
           path: test-results.xml
-      - store_artifacts:
-          path: ./junit
+      # - store_artifacts:
+      #     path: ./junit
