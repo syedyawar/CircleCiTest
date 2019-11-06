@@ -1,4 +1,10 @@
 version: 2
+dependencies:
+  pre:
+    - npm install -g karma-cli bower
+    - bower install
+  cache_directories:
+    - ~/nvm
 jobs:
   build:
     working_directory: ~/circleCiProject
